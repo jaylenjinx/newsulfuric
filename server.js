@@ -31,12 +31,12 @@ app.post('/', function (req, res) {
     res.render('pages/index');
 });
 
-/*
+
 // Shop Route
 app.get('/shop', function (req, res) {
     res.render('pages/shop');
 });
-*/
+
 
 // Sunflower Sulfur Route
 app.get('/sunsul', function (req, res) {
@@ -48,7 +48,7 @@ app.get('/fuzz', function (req, res) {
     res.render('pages/fuzz');
 });
 
-/*
+
 // Successful Payment Route
 app.get('/success', function (req, res) {
     res.render('pages/success');
@@ -91,4 +91,4 @@ app.post('/sunsulhoodie', async (req, res) => {
   
     res.redirect(303, session.url);
   });
-  */
+  
