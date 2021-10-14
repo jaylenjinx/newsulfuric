@@ -13,7 +13,8 @@ const bodyParser = require('body-parser');
 var app = express();
 
 // Render static files
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
