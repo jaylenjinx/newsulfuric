@@ -14,6 +14,7 @@ var app = express();
 
 // Render static files
 app.use(express.static('public'));
+app.use('/assets', express.static(path.join('public/assets')));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
