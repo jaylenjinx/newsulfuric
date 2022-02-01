@@ -1,9 +1,9 @@
-//const keyPublishable = "pk_live_51JjDBBH4zQ6l3kMW7R1ALegPiyZzHuyQTGzGolhnFfUziFnBG6ovF0N6WR9eXQJMjqPRLdns7326ddzJkTazJ4Db00HGsKM1CN"; // Enter the key here
-//const keySecret = "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"; // enter the secret here
+const keyPublishable = "pk_live_51JjDBBH4zQ6l3kMW7R1ALegPiyZzHuyQTGzGolhnFfUziFnBG6ovF0N6WR9eXQJMjqPRLdns7326ddzJkTazJ4Db00HGsKM1CN"; // Enter the key here
+const keySecret = "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"; // enter the secret here
 // const keySecret = "sk_test_51JjDBBH4zQ6l3kMWYnDXBNWUBgfOtAgoQ585wGXmbi548dtMiGAVH5u6ZRCQEujqW3IL1wUpX3Cd40ao53w92KBm00f8Tf5Uf8"; // test secret key
 
 // Load Node modules
-//const stripe = require('stripe')(keySecret);
+const stripe = require('stripe')(keySecret);
 const express = require('express');
 const ejs = require('ejs');
 const path = require('path')
@@ -31,12 +31,12 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
     res.render('pages/index');
 });
-/*
+
 // Shop Route
 app.get('/shop', function (req, res) {
     res.render('pages/shop');
 });
-*/
+
 // Label Route
 app.get('/label', function (req, res) {
   res.render('pages/label');
@@ -57,7 +57,7 @@ app.get('/fuzz', function (req, res) {
     res.render('pages/fuzz');
 });
 
-/*
+
 // Successful Payment Route
 app.get('/success', function (req, res) {
     res.render('pages/success');
@@ -100,4 +100,4 @@ app.post('/sunsulhoodie', async (req, res) => {
   
     res.redirect(303, session.url);
   });
-*/
+
